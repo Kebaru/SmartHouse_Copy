@@ -13,8 +13,8 @@
       android:layout_width="186dp"
       android:layout_height="150dp"
       android:scaleType="centerCrop"
-      android:scaleX="2"
-      android:scaleY="2"
+      android:scaleX="1.8"
+      android:scaleY="1.8"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.071"
@@ -23,28 +23,29 @@
       app:layout_constraintVertical_bias="0.196"
       app:srcCompat="@drawable/home_livingroom_icon" />
 
-  <ImageView
+  <ImageButton
       android:id="@+id/container2"
       android:layout_width="186dp"
       android:layout_height="150dp"
+      android:background="@drawable/home_kitchen_icon"
+      android:onClick="toKitchen"
       android:scaleType="centerCrop"
-      android:scaleX="2"
+      android:scaleX="1.8"
       android:scaleY="2"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.928"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.196"
-      app:srcCompat="@drawable/home_kitchen_icon" />
+      app:layout_constraintVertical_bias="0.196" />
 
   <ImageView
       android:id="@+id/container3"
       android:layout_width="186dp"
       android:layout_height="150dp"
       android:scaleType="centerCrop"
-      android:scaleX="2"
-      android:scaleY="2"
+      android:scaleX="1.8"
+      android:scaleY="1.8"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.071"
