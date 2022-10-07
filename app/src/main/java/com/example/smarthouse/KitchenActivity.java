@@ -2,7 +2,10 @@ package com.example.smarthouse;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
+import android.hardware.lights.Light;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,19 +25,22 @@ public class KitchenActivity extends AppCompatActivity {
         lightBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                replaceFragment(new light_frament)
+                replaceFragment(new LightFragment());
             }
         });
 
         thermoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                replaceFragment(new thermo_frament)
+                replaceFragment(new ThermoFragment());
             }
         });
     }
 
     private void replaceFragment(Fragment fragment){
-
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.framelayout,fragment);
+        fragmentTransaction.commit();
     }
 }
