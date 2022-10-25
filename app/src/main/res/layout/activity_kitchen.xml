@@ -13,32 +13,46 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </FrameLayout>
 
     <Button
         android:id="@+id/lightbutton"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/kitchen_light_btn"
         android:backgroundTint="@color/black"
-        android:text="Light"
-        android:layout_marginBottom="50dp"
-        android:layout_marginStart="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/thermobutton"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/kitchen_thermo_btn"
         android:backgroundTint="@color/black"
-        android:text="Thermo"
-        android:layout_marginBottom="50dp"
-        android:layout_marginEnd="50dp"
+        app:layout_constraintStart_toEndOf="@id/lightbutton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bg_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:scaleX="2"
+        android:scaleY="1.85"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
-
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/kitchen_bg_btns" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
