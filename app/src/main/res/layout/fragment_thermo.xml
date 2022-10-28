@@ -9,25 +9,41 @@
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:id="@+id/et_thermo"
+        android:id="@+id/main_txt_thermo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:text="Thermostat"
-        android:textSize="24sp"
+        android:textSize="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244" />
 
     <TextView
-        android:id="@+id/et_room"
+        android:id="@+id/kitchen_txt_thermo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:text="Kitchen"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@id/et_thermo"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/et_thermo"
-        app:layout_constraintTop_toBottomOf="@id/et_thermo" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:thumb="@drawable/thumb_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243"
+        app:track="@drawable/track_selector" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
