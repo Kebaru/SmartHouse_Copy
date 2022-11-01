@@ -1,10 +1,13 @@
-package com.example.smarthouse;
+package com.example.smarthouse.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.smarthouse.R;
+import com.example.smarthouse.activities.HomeActivity;
 
 public class RegistrationActivity extends AppCompatActivity {
 

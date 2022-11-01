@@ -1,4 +1,4 @@
-package com.example.smarthouse;
+package com.example.smarthouse.fragments;
 
 import android.os.Bundle;
 
@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.smarthouse.R;
 
 
 public class LightFragment extends Fragment {

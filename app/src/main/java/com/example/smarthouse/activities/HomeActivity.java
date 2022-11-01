@@ -1,15 +1,14 @@
-package com.example.smarthouse;
+package com.example.smarthouse.activities;
 
 import static androidx.navigation.Navigation.findNavController;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.google.android.material.navigation.NavigationView;
+import com.example.smarthouse.R;
 
 public class HomeActivity extends AppCompatActivity {
 
