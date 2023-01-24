@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:icon="@drawable/frame_home"
+        android:id="@+id/home"/>
+    <item android:title="Statics"
+        android:icon="@drawable/frame_statics"
+        android:id="@+id/statics"/>
+    <item android:title="Routines"
+        android:icon="@drawable/frame_routines"
+        android:id="@+id/routines"/>
+    <item android:title="Setting"
+        android:icon="@drawable/frame_setting"
+        android:id="@+id/setting"/>
+</menu>

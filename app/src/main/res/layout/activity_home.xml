@@ -5,94 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.HomeActivity"
-    tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="-34dp">
+   >
 
-  <ImageView
-      android:id="@+id/container1"
-      android:layout_width="186dp"
-      android:layout_height="150dp"
-      android:scaleType="centerCrop"
-      android:scaleX="1.8"
-      android:scaleY="1.8"
+  <FrameLayout
+      android:id="@+id/framelayout"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintBottom_toTopOf="@id/botnav"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+  </FrameLayout>
+
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:id="@+id/botnav"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.071"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.196"
-      app:srcCompat="@drawable/home_livingroom_icon" />
-
-  <ImageButton
-      android:id="@+id/container2"
-      android:layout_width="186dp"
-      android:layout_height="150dp"
-      android:background="@drawable/home_kitchen_icon"
-      android:onClick="toKitchen"
-      android:scaleType="centerCrop"
-      android:scaleX="1.8"
-      android:scaleY="2"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.928"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.196" />
-
-  <ImageView
-      android:id="@+id/container3"
-      android:layout_width="186dp"
-      android:layout_height="150dp"
-      android:scaleType="centerCrop"
-      android:scaleX="1.8"
-      android:scaleY="1.8"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.071"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.499"
-      app:srcCompat="@drawable/home_bathroom_icon" />
-
-  <ImageView
-      android:id="@+id/statics_icon"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginBottom="16dp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toStartOf="@id/routines_icon"
-      app:layout_constraintStart_toEndOf="@id/home_icon"
-      app:srcCompat="@drawable/home_statics_icon" />
-
-  <ImageView
-      android:id="@+id/home_icon"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="16dp"
-      android:layout_marginBottom="16dp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:srcCompat="@drawable/home_home_icon" />
-
-  <ImageView
-      android:id="@+id/routines_icon"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginBottom="16dp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toStartOf="@id/setting_icon"
-      app:layout_constraintStart_toEndOf="@id/statics_icon"
-      app:srcCompat="@drawable/home_routines_icon" />
-
-  <ImageView
-      android:id="@+id/setting_icon"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginEnd="16dp"
-      android:layout_marginBottom="16dp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:srcCompat="@drawable/home_settings_icon" />
+      app:menu="@menu/bottom_navbar"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
